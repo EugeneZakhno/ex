@@ -51,7 +51,7 @@
     <!-- Start header -->
     <header class="top-header">
         <div class="header_top">
-            
+
             <div class="container">
                 <div class="row">
                     <div class="logo_section">
@@ -66,13 +66,13 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
         <div class="header_bottom">
           <div class="container">
             <div class="col-sm-12">
                 <div class="menu_orange_section" style="background: #ff880e;">
-                   <nav class="navbar header-nav navbar-expand-lg"> 
+                   <nav class="navbar header-nav navbar-expand-lg">
                      <div class="menu_section">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
@@ -96,12 +96,12 @@
                     <a class="search-btn">
                         <img src="images/search_icon.png" alt="#" />
                     </a>
-                </div> 
+                </div>
                 </div>
             </div>
           </div>
         </div>
-        
+
     </header>
     <!-- End header -->
 
@@ -142,7 +142,7 @@
         </div>
     </div>
     <!-- End Banner -->
-    
+
 	<!-- section -->
     <div class="section">
         <div class="container">
@@ -155,7 +155,7 @@
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>	
+						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
@@ -176,7 +176,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Services</h2>    
+                           <h2><span class="theme_color"></span>Services</h2>
                         </div>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
                 <div class="col-md-6 layout_padding">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2><span class="theme_color">Apply for</span> Exchange</h2>    
+                           <h2><span class="theme_color">Apply for</span> Exchange</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
@@ -252,7 +252,7 @@
                 <div class="col-md-6">
                     <div class="full paddding_left_15">
                         <div class="heading_main text_align_left">
-                           <h2>About</h2>    
+                           <h2>About</h2>
                         </div>
                     </div>
                     <div class="full paddding_left_15">
@@ -278,7 +278,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>News</h2>    
+                           <h2><span class="theme_color"></span>News</h2>
                         </div>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Contact</h2>    
+                           <h2><span class="theme_color"></span>Contact</h2>
                         </div>
                     </div>
                 </div>
@@ -428,7 +428,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© Copyrights 2019 design by html.design</p>
+                    <p class="crp">© Copyrights 2024 Eugene Zakhno</p>
                 </div>
             </div>
         </div>
@@ -456,7 +456,7 @@
 (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
-		
+
 		return $(this).each(function () {
 			// set options for current element
 			var settings = $.extend({}, $.fn.countTo.defaults, {
@@ -466,58 +466,58 @@
 				refreshInterval: $(this).data('refresh-interval'),
 				decimals:        $(this).data('decimals')
 			}, options);
-			
+
 			// how many times to update the value, and how much to increment the value on each update
 			var loops = Math.ceil(settings.speed / settings.refreshInterval),
 				increment = (settings.to - settings.from) / loops;
-			
+
 			// references & variables that will change with each update
 			var self = this,
 				$self = $(this),
 				loopCount = 0,
 				value = settings.from,
 				data = $self.data('countTo') || {};
-			
+
 			$self.data('countTo', data);
-			
+
 			// if an existing interval can be found, clear it first
 			if (data.interval) {
 				clearInterval(data.interval);
 			}
 			data.interval = setInterval(updateTimer, settings.refreshInterval);
-			
+
 			// initialize the element with the starting value
 			render(value);
-			
+
 			function updateTimer() {
 				value += increment;
 				loopCount++;
-				
+
 				render(value);
-				
+
 				if (typeof(settings.onUpdate) == 'function') {
 					settings.onUpdate.call(self, value);
 				}
-				
+
 				if (loopCount >= loops) {
 					// remove the interval
 					$self.removeData('countTo');
 					clearInterval(data.interval);
 					value = settings.to;
-					
+
 					if (typeof(settings.onComplete) == 'function') {
 						settings.onComplete.call(self, value);
 					}
 				}
 			}
-			
+
 			function render(value) {
 				var formattedValue = settings.formatter.call(self, value, settings);
 				$self.html(formattedValue);
 			}
 		});
 	};
-	
+
 	$.fn.countTo.defaults = {
 		from: 0,               // the number the element should start at
 		to: 0,                 // the number the element should end at
@@ -528,7 +528,7 @@
 		onUpdate: null,        // callback method for every time the element is updated
 		onComplete: null       // callback method for when the element finishes updating
 	};
-	
+
 	function formatter(value, settings) {
 		return value.toFixed(settings.decimals);
 	}
@@ -541,10 +541,10 @@ jQuery(function ($) {
 	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
 	}
   });
-  
+
   // start all the timers
-  $('.timer').each(count);  
-  
+  $('.timer').each(count);
+
   function count(options) {
 	var $this = $(this);
 	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
