@@ -1,5 +1,5 @@
-/*------------------------------------------------------------------ 
-    IMPORT FONTS 
+/*------------------------------------------------------------------
+    IMPORT FONTS
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
-/*------------------------------------------------------------------ 
-    IMPORT FILES 
+/*------------------------------------------------------------------
+    IMPORT FILES
 -------------------------------------------------------------------*/
 
 @import url(animate.css);
@@ -19,7 +19,7 @@
 @import url(timeline.css);
 @import url(flaticon.css);
 
-/*------------------------------------------------------------------ 
+/*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
@@ -172,8 +172,8 @@ button:focus {
 }
 
 
-/*------------------------------------------------------------------ 
-   LOADER 
+/*------------------------------------------------------------------
+   LOADER
 -------------------------------------------------------------------*/
 
 #preloader {
@@ -451,7 +451,7 @@ a.navbar-brand {
     color: #fff;
 }
 
-.top-header .navbar .navbar-collapse ul li a:hover, 
+.top-header .navbar .navbar-collapse ul li a:hover,
 .top-header .navbar .navbar-collapse ul li a:focus {
     background: transparent;
     color: #fff;
@@ -769,8 +769,8 @@ a.navbar-brand {
 }
 
 .start_exchange_bt {
-    border: solid #fff 1px;
-    color: #fff;
+    border: solid #fa9d13 1px;
+    color: #ce8a0d;
     padding: 7px 25px;
     float: left;
     width: 220px;
@@ -795,7 +795,7 @@ a.navbar-brand {
 
 .contact_bt:hover,
 .contact_bt:focus {
-    color: #fff;
+    color: #ada7a7;
 }
 
 .dark_bg .contact_bt {
@@ -803,8 +803,10 @@ a.navbar-brand {
 }
 
 .slide_text {
+	position: absolute;
     margin-top: 250px;
     padding-left: 0;
+	z-index: 2;
 }
 
 /*------------------------------------------------------------------ About -------------------------------------------------------------------*/

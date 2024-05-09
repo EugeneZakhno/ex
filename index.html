@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -110,20 +112,22 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="pogoSlider" id="js-main-slider">
-                    <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                    <div class="pogoSlider-slide">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="slide_text white_fonts">
+                                    <div class="slide_text ">
                                         <h3>Progress & Success<br><strong>Currency</strong></h3>
                                         <br>
                                         <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
                                     </div>
+                                    <model-viewer src="bitcoin (1).glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="357.7deg 84.36deg 9.83m" field-of-view="30deg" auto-rotate>
+                                    </model-viewer>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png);">
+                    <div class="pogoSlider-slide" style="background-image:url(images/slide_img.png); z-index: 0">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">

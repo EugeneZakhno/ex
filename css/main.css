@@ -1,0 +1,20 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Скрываем значок мобильного телефона */
+#ar-prompt {
+    display: none;
+}
+
+/* Делаем 3D плеер на весь браузер */
+model-viewer {
+    margin-top: 100px;
+    margin-left: 500px;
+    height: 80vh;
+    width: 100%;
+    z-index: 1;
+}
